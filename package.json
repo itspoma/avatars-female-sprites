@@ -1,0 +1,43 @@
+{
+  "name": "@dicebear/avatars-female-sprites",
+  "version": "1.0.2",
+  "description": "Female sprite collection for DiceBear Avatars",
+  "main": "lib/sprites.js",
+  "types": "lib/sprites.d.ts",
+  "scripts": {
+    "prepublishOnly": "npm run build",
+    "prebuild": "rm -rf dist/ lib/ || true",
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DiceBear/avatars-female-sprites.git"
+  },
+  "keywords": [
+    "dicebear",
+    "avatars",
+    "female",
+    "svg",
+    "sprites"
+  ],
+  "author": "DiceBear <opensource@dicebear.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/DiceBear/avatars-female-sprites/issues"
+  },
+  "homepage": "https://github.com/DiceBear/avatars-female-sprites#readme",
+  "peerDependencies": {
+    "@dicebear/avatars": "^2.0.0"
+  },
+  "devDependencies": {
+    "@dicebear/avatars": "^2.0.0",
+    "@dicebear/avatars-webpack-config": "^2.0.0",
+    "webpack": "^4.5.0",
+    "webpack-cli": "^2.0.14"
+  },
+  "files": [
+    "LICENSE",
+    "dist",
+    "lib"
+  ]
+}
