@@ -120,23 +120,23 @@ export default function(options: Options = {}) {
     if (false === Array.isArray(options.mood) || options.mood.indexOf('sad') > -1) {
       // prettier-ignore
       mouth.push(
-        `<path d="M9 11v1H8v1h4v-1h-1v-1H9z" fill=>${mouthColor.hex}/>`,
-        `<path d="M11 11v1H9v1H8v-1h1v-1h2z" fill=>${mouthColor.hex}/>`,
-        `<path d="M9 12h2v1H9v-1z" fill=>${mouthColor.hex}/>`,
-        `<path d="M9 12v1h1v1h1v-2H9z" fill=>${mouthColor.hex}/>`
+        `<path d="M9 11v1H8v1h4v-1h-1v-1H9z" fill="${mouthColor.hex}"/>`,
+        `<path d="M11 11v1H9v1H8v-1h1v-1h2z" fill="${mouthColor.hex}"/>`,
+        `<path d="M9 12h2v1H9v-1z" fill="${mouthColor.hex}"/>`,
+        `<path d="M9 12v1h1v1h1v-2H9z" fill="${mouthColor.hex}"/>`
       );
     }
 
     if (false === Array.isArray(options.mood) || options.mood.indexOf('happy') > -1) {
       // prettier-ignore
       mouth.push(
-        `<path d="M9 11v2h2v-1h-1v-1H9z" fill=>${mouthColor.hex}/><path d="M11 13v-1h-1v-1H9v1h1v1h1z" fill="#FFF" fill-opacity=".2"/>`,
-        `<path d="M10 11v1H9v1h2v-2h-1z" fill=>${mouthColor.hex}/>`,
-        `<path d="M8 11v1h1v1h2v-1h1v-1H8z" fill=>${mouthColor.hex}/>`,
-        `<path d="M9 12v1h2v-1h1v-1h-1v1H9z" fill=>${mouthColor.hex}/>`,
-        `<path d="M8 11v1h1v1h2v-1H9v-1H8z" fill=>${mouthColor.hex}/>`,
-        `<path d="M8 12v1h1v1h2v-1h1v-1h-1v-1H9v1H8z" fill=>${mouthColor.hex}/><path d="M9 12v1h2v-1H9z" fill="#FFF"/>`,
-        `<path d="M8 12v1h1v1h2v-1h1v-1h-1v-1H9v1H8z" fill=>${mouthColor.hex}/><path d="M9 12v1h2v-1H9z" fill="#FFF" fill-opacity=".2"/>`
+        `<path d="M9 11v2h2v-1h-1v-1H9z" fill="${mouthColor.hex}"/><path d="M11 13v-1h-1v-1H9v1h1v1h1z" fill="#FFF" fill-opacity=".2"/>`,
+        `<path d="M10 11v1H9v1h2v-2h-1z" fill="${mouthColor.hex}"/>`,
+        `<path d="M8 11v1h1v1h2v-1h1v-1H8z" fill="${mouthColor.hex}"/>`,
+        `<path d="M9 12v1h2v-1h1v-1h-1v1H9z" fill="${mouthColor.hex}"/>`,
+        `<path d="M8 11v1h1v1h2v-1H9v-1H8z" fill="${mouthColor.hex}"/>`,
+        `<path d="M8 12v1h1v1h2v-1h1v-1h-1v-1H9v1H8z" fill="${mouthColor.hex}"/><path d="M9 12v1h2v-1H9z" fill="#FFF"/>`,
+        `<path d="M8 12v1h1v1h2v-1h1v-1h-1v-1H9v1H8z" fill="${mouthColor.hex}"/><path d="M9 12v1h2v-1H9z" fill="#FFF" fill-opacity=".2"/>`
       );
     }
 
