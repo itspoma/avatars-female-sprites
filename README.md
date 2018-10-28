@@ -53,9 +53,9 @@ let svg = avatars.create('custom-seed');
 
 ## Options
 
-| name | description             | options               | default                       |
-| ---- | ----------------------- | --------------------- | ----------------------------- |
-| mood | Array of desired moods. | happy, sad, surprised | ['happy', 'sad', 'surprised'] |
+| name | type             | default                         | description                                  |
+| ---- | ---------------- | ------------------------------- | -------------------------------------------- |
+| mood | array of strings | `['happy', 'sad', 'surprised']` | Possible values: `sad`, `happy`, `surprised` |
 
 ## Further informations
 
