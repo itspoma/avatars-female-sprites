@@ -4,15 +4,15 @@
 [![npm](https://img.shields.io/npm/v/@dicebear/avatars-female-sprites.svg)](https://www.npmjs.com/package/@dicebear/avatars-female-sprites)
 
 <p>
-    <img src="https://avatars.dicebear.com/v2/female/1.svg" width="60" />
-    <img src="https://avatars.dicebear.com/v2/female/2.svg" width="60" />
-    <img src="https://avatars.dicebear.com/v2/female/3.svg" width="60" />
-    <img src="https://avatars.dicebear.com/v2/female/4.svg" width="60" />
-    <img src="https://avatars.dicebear.com/v2/female/5.svg" width="60" />
-    <img src="https://avatars.dicebear.com/v2/female/6.svg" width="60" />
-    <img src="https://avatars.dicebear.com/v2/female/7.svg" width="60" />
-    <img src="https://avatars.dicebear.com/v2/female/8.svg" width="60" />
-    <img src="https://avatars.dicebear.com/v2/female/9.svg" width="60" />
+    <img src="https://avatars.dicebear.com/v3/female/1.svg" width="60" />
+    <img src="https://avatars.dicebear.com/v3/female/2.svg" width="60" />
+    <img src="https://avatars.dicebear.com/v3/female/3.svg" width="60" />
+    <img src="https://avatars.dicebear.com/v3/female/4.svg" width="60" />
+    <img src="https://avatars.dicebear.com/v3/female/5.svg" width="60" />
+    <img src="https://avatars.dicebear.com/v3/female/6.svg" width="60" />
+    <img src="https://avatars.dicebear.com/v3/female/7.svg" width="60" />
+    <img src="https://avatars.dicebear.com/v3/female/8.svg" width="60" />
+    <img src="https://avatars.dicebear.com/v3/female/9.svg" width="60" />
 </p>
 
 ## Usage
@@ -21,31 +21,20 @@
 
 Our free HTTP-API is the easiest way to use this sprite collection. Just use the following URL as image source.
 
-    https://avatars.dicebear.com/v2/female/:seed.svg
+    https://avatars.dicebear.com/v3/female/:seed.svg
 
-The value of `:seed` can be anything you like - but **don't** use any sensitive or personal data here!
+The value of `:seed` can be anything you like - but **don't** use any sensitive or personal data here! The GET parameter
+`option` can be used to pass [options](#options).
 
-### CDN
+#### Examples
 
-You also can use this sprite collection with a CDN.
-
-Add the following line to the end of the document body.
-
-```html
-<script type="text/javascript" src="https://unpkg.com/@dicebear/avatars@2.0.0/dist/avatars.min.js"></script>
-<script type="text/javascript" src="https://unpkg.com/@dicebear/avatars-female-sprites@1.0.0/dist/sprites.min.js"></script>
-```
-
-Now you are ready to create your first Avatar.
-
-```js
-var avatars = new Avatars(Avatars.sprites.female);
-var svg = avatars.create('custom-seed');
-```
+| preview                                                                                            | url                                                                       |
+| -------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------- |
+| <img src="https://avatars.dicebear.com/v3/female/example.svg" width="60" />                        | https://avatars.dicebear.com/v3/female/example.svg                        |
+| <img src="https://avatars.dicebear.com/v3/female/example.svg?option['mood'][]=happy" width="60" /> | https://avatars.dicebear.com/v3/female/example.svg?option['mood'][]=happy |
+| <img src="https://avatars.dicebear.com/v3/female/example.svg?option['mood'][]=sad" width="60" />   | https://avatars.dicebear.com/v3/female/example.svg?option['mood'][]=sad   |
 
 ### NPM
-
-Choose NPM if you want to use Avatars server-side or with webpack.
 
 Install the Avatars and this sprite collection with the following command.
 
@@ -54,22 +43,19 @@ Install the Avatars and this sprite collection with the following command.
 Now you are ready to create your first Avatar.
 
 ```js
-const Avatars = require('@dicebear/avatars').default;
-const SpriteCollection = require('@dicebear/avatars-female-sprites').default;
-
-let avatars = new Avatars(Sprites);
-let svg = avatars.create('custom-seed');
-```
-
-Or with ES6-Modules:
-
-```js
 import Avatars from '@dicebear/avatars';
-import SpriteCollection from '@dicebear/avatars-female-sprites';
+import sprites from '@dicebear/avatars-female-sprites';
 
-let avatars = new Avatars(SpriteCollection);
+let options = {};
+let avatars = new Avatars(sprites(options));
 let svg = avatars.create('custom-seed');
 ```
+
+## Options
+
+| name | description             | options               | default                       |
+| ---- | ----------------------- | --------------------- | ----------------------------- |
+| mood | Array of desired moods. | happy, sad, surprised | ['happy', 'sad', 'surprised'] |
 
 ## Further informations
 
