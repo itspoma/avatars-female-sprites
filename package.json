@@ -1,5 +1,5 @@
 {
-  "name": "@dicebear/avatars-female-sprites",
+  "name": "itspoma-avatars-female-sprites",
   "version": "2.0.0-5",
   "description": "Pixel art female sprite collection for DiceBear Avatars",
   "main": "lib/index.js",

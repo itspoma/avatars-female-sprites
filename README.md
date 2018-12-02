@@ -1,5 +1,8 @@
 # Female sprite collection for DiceBear Avatars
 
+ORIGINAL: https://github.com/DiceBear/avatars-female-sprites
+Made changes, left only happy faces.
+
 ![license](https://img.shields.io/github/license/dicebear/avatars-female-sprites.svg)
 [![npm](https://img.shields.io/npm/v/@dicebear/avatars-female-sprites.svg)](https://www.npmjs.com/package/@dicebear/avatars-female-sprites)
 
